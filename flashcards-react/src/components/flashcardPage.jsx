@@ -31,6 +31,10 @@ function FlashcardPage(props) {
             <Link to='/'>Collections</Link>
             </div>
             <Flashcard flashcards={flashcards}/>
+            <div>
+            {/* <Link to='/form' flashcards={flashcards}>Create</Link> */}
+            <Link to={{pathname: '/form', query:{flashcards:flashcards}  }}>Create</Link>
+            </div>
         </div>
     );
 }

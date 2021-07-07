@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useForm from './useForm';
+import axios from 'axios'
 
-const CreateForm = () => {
-    const {values, handleChange, handleSubmit } = useForm(create);
-
-    function create(){
-
-    }
+const CreateForm = (props) => {
+    const {values, handleChange, handleSubmit} = useForm(createCard);
+    const [flashcard, setFlashcard] = useState(props.flashcards.flashcards)
+    console.log(props.collectionId)
+        async function createCard() {
+            const addCard = {...values, ['collection']: props.collectionId}
+            try{
+                let response = await axios.post(`http://127.0.0.1:8000/collections-flashcard/`, addCard);
+                console.log(response.data)
+                setFlashcard(response.data)
+                
+              }
+              catch(err) {
+                console.log(err);
+              } 
+        }
+    
     return(
         <div>
             <form onSubmit={handleSubmit}>

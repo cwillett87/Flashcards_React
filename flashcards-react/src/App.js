@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios'
 import Collections from './components/collection';
 import './App.css';
-import {Link} from 'react-router-dom';
 import FlashcardPage from './components/flashcardPage';
 import {Route, Switch} from 'react-router-dom';
+import FormPage from './components/formPage';
 
 function App() {
 
@@ -41,6 +41,7 @@ let collectionTitle = (title) => {
       <Switch>
         <Route exact path='/' render={() =><Collections collections={collections} selected={sellectedCollection} title={collectionTitle}/>} />
         <Route path='/flashcards' render={props => <FlashcardPage {...props} title={selectedTitle} collections={collections} selected={sellectedCollection} collectionId={selected}/>}/>
+        <Route path='/form' render={props => <FormPage {...props} collectionId={selected}/>}/>
       </Switch>
     </div>
   );
