@@ -6,10 +6,10 @@ import Flashcard from './flashcard';
 function FlashcardPage(props) {
 
     const [flashcards, setFlashcards] = useState([]);
-
+    
     useEffect(() => {
         getFlashcards(props.collectionId);
-        console.log(props)
+        console.log(flashcards)
       },[props]);
 
     let getFlashcards = async (collectionId) => {
