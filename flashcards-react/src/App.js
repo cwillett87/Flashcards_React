@@ -10,6 +10,7 @@ function App() {
 
   const [collections, setCollections] = useState([]);
   const [selected, setSelCollections] = useState([]);
+  const [selectedTitle, setSelTitle] = useState([]);
 
 useEffect(() => {
   getAllCollections();
@@ -31,12 +32,15 @@ let sellectedCollection = (selection) => {
   setSelCollections(selection)
 }
 
+let collectionTitle = (title) => {
+  setSelTitle(title)
+}
+
   return (
     <div>
-      <h1>Collections</h1>
       <Switch>
-        <Route exact path='/' render={() =><Collections collections={collections} selected={sellectedCollection} />} />
-        <Route path='/flashcards' render={props => <FlashcardPage {...props} collections={collections} selected={sellectedCollection} collectionId={selected}/>}/>
+        <Route exact path='/' render={() =><Collections collections={collections} selected={sellectedCollection} title={collectionTitle}/>} />
+        <Route path='/flashcards' render={props => <FlashcardPage {...props} title={selectedTitle} collections={collections} selected={sellectedCollection} collectionId={selected}/>}/>
       </Switch>
     </div>
   );

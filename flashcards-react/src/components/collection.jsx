@@ -6,13 +6,14 @@ function Collections(props) {
 
     let collections = props.collections.map(function(collection){
         return <h1>
-            <Link to='/flashcards' onClick={() => props.selected(collection.id)}>
+            <Link to='/flashcards' onClick={() => (props.title(collection.title), props.selected(collection.id))}>
             {collection.title}
             </Link>
         </h1>
     });
     return(
         <div>
+            <h1>Collections</h1>
             {collections}
         </div>
     );
