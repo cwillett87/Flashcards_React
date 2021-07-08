@@ -1,8 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 /* eslint-disable no-unused-expressions */
 function Flashcard(props) {
 
     const [cardNumber, setCardNumber] = useState(0);
+    const [flashcards, setFlashcards] = useState(props.flashcards);
     console.log(props)
     if(props.flashcards.length === 0){
         return(
@@ -38,7 +40,8 @@ function Flashcard(props) {
                 <div>
                     <h1>{props.flashcards[cardNumber].word}</h1>
                     <h2>{props.flashcards[cardNumber].definition}</h2>
-                    <h4>{props.flashcards[cardNumber].card_number}/{props.flashcards.length}</h4>
+                    <h4>{cardNumber + 1}/{props.flashcards.length}</h4>
+                    <Link to={{pathname: '/edit', query:{flashcard:props.flashcards[cardNumber]}  }}><button>Edit</button></Link>
                 </div>
                 <div>
                     <button onClick={() => goToNextCard()}>Next Card</button>

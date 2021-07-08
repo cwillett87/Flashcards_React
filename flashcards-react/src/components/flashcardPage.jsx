@@ -9,8 +9,8 @@ function FlashcardPage(props) {
     
     useEffect(() => {
         getFlashcards(props.collectionId);
-        console.log(flashcards)
-      },[props]);
+        console.log(props)
+      },[]);
 
     let getFlashcards = async (collectionId) => {
         try{
@@ -37,5 +37,6 @@ function FlashcardPage(props) {
             </div>
         </div>
     );
+
 }
 export default withRouter(FlashcardPage);

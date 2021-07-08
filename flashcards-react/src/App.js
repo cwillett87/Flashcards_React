@@ -5,6 +5,7 @@ import './App.css';
 import FlashcardPage from './components/flashcardPage';
 import {Route, Switch} from 'react-router-dom';
 import FormPage from './components/formPage';
+import UpdatePage from './components/updatePage';
 
 function App() {
 
@@ -42,6 +43,7 @@ let collectionTitle = (title) => {
         <Route exact path='/' render={() =><Collections collections={collections} selected={sellectedCollection} title={collectionTitle}/>} />
         <Route path='/flashcards' render={props => <FlashcardPage {...props} title={selectedTitle} collections={collections} selected={sellectedCollection} collectionId={selected}/>}/>
         <Route path='/form' render={props => <FormPage {...props} collectionId={selected}/>}/>
+        <Route path='/edit' render={props => <UpdatePage {...props} collectionId={selected} />}/>
       </Switch>
     </div>
   );

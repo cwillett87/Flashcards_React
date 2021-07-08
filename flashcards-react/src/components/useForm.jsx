@@ -14,6 +14,7 @@ const useForm = (callback) => {
         event.preventDefault();
 
         callback();
+        window.location = '/flashcards';
     };
 
     return {values, handleChange, handleSubmit}
