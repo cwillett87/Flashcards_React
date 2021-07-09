@@ -26,7 +26,7 @@ function FlashcardPage(props) {
 
     return(
         <div>
-          <h1>{props.title}</h1>
+          <h2>{props.title}</h2>
             <div>
             <Link to='/'>Collections</Link>
             </div>

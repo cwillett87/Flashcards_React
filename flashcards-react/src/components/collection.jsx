@@ -26,10 +26,12 @@ function Collections(props) {
     });
     return(
         <div>
+            
             <Nav className='justify-content-center'>
       
                 {collections}
            </Nav>
+           <h1>Study Hall</h1>
            </div>
     );
 }

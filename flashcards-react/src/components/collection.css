@@ -18,7 +18,15 @@ padding: 10px;
 
 }
 
-.link{
-    
+h1{
+    color: white;
+    background-color: burlywood;
+    height: 6vh;
+    width:16vw;
+    margin: 20px;
+    margin-left: 42%;
+    border-radius: 5px;
+    padding-left: 6px;
+
 }
 

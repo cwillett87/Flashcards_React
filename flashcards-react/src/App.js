@@ -38,7 +38,7 @@ let collectionTitle = (title) => {
 }
 
   return (
-    <div>
+    <div className='app'>
       <Collections className='app' collections={collections} selected={sellectedCollection} title={collectionTitle} collectionId={selected}/>
       <div>
         <Switch>

@@ -1,4 +1,7 @@
 .app{
-    text-align: justify;
-    background-color: rgb(237, 178, 100);
+    background: url("/src/image/books.jpg");
+    background-position: 'center';
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }

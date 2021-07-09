@@ -38,8 +38,8 @@ function Flashcard(props) {
                 <button onClick={() => goToPreviousCard()}>Previous Card</button>
                 </div>
                 <div>
-                    <h1>{props.flashcards[cardNumber].word}</h1>
-                    <h2>{props.flashcards[cardNumber].definition}</h2>
+                    <h2>{props.flashcards[cardNumber].word}</h2>
+                    <h3>{props.flashcards[cardNumber].definition}</h3>
                     <h4>{cardNumber + 1}/{props.flashcards.length}</h4>
                     <Link to={{pathname: '/edit', query:{flashcard:props.flashcards[cardNumber]}  }}><button>Edit</button></Link>
                 </div>
