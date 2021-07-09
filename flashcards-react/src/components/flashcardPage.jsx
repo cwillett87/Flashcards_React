@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios'
 import {Link, withRouter} from 'react-router-dom';
 import Flashcard from './flashcard';
+import './flashcard.css'
 
 function FlashcardPage(props) {
 
@@ -26,7 +27,7 @@ function FlashcardPage(props) {
 
     return(
         <div>
-          <h2>{props.title}</h2>
+          <h2 className='title'>{props.title}</h2>
             <div>
             <Link to='/'>Collections</Link>
             </div>

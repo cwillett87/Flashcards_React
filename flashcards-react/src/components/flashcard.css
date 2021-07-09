@@ -1,0 +1,29 @@
+.title{
+    color: white;
+    background-color: burlywood;
+    height: 5vh;
+    width:16vw;
+    margin: 20px;
+    margin-left: 42%;
+    border-radius: 8px;
+    padding-left: 12px;
+    padding-top: 5px;
+    
+}
+
+.card{
+    color: white;
+    background-color: burlywood;
+    height: 25vh;
+    width:30vw;
+    margin: 20px;
+    margin-left: 35%;
+    border-radius: 15px;
+    padding-left:  40px;
+    padding-top: 20px;
+    
+}
+
+.number{
+    margin-left: 85%;
+}

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import './flashcard.css'
 /* eslint-disable no-unused-expressions */
 function Flashcard(props) {
 
@@ -37,10 +38,10 @@ function Flashcard(props) {
                 <div>
                 <button onClick={() => goToPreviousCard()}>Previous Card</button>
                 </div>
-                <div>
+                <div className='card'>
+                    <h4 className='number'>{cardNumber + 1}/{props.flashcards.length}</h4>
                     <h2>{props.flashcards[cardNumber].word}</h2>
                     <h3>{props.flashcards[cardNumber].definition}</h3>
-                    <h4>{cardNumber + 1}/{props.flashcards.length}</h4>
                     <Link to={{pathname: '/edit', query:{flashcard:props.flashcards[cardNumber]}  }}><button>Edit</button></Link>
                 </div>
                 <div>
