@@ -31,6 +31,8 @@
 .cycle{
     margin-left: 25%;
     margin-top: 30%;
+    color: white;
+    background-color: burlywood;
 }
 
 form{
@@ -44,9 +46,10 @@ form{
     padding-top: 15px;
 }
 
-.link{
+.move{
     color: white;
     background-color: burlywood;
-    margin-left: 25%;
-    padding: 3px; 
+    margin-left: 30%;
+    padding: 5px; 
+    border-radius: 3px;
 }

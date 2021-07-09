@@ -11,7 +11,7 @@ function Collections(props) {
     let collections = props.collections.map(function(collection){
         if(props.collectionId == collection.id){
             console.log('works')
-            return  <div className='link'>
+            return  <div>
                         <Nav.Item className='collection'>
                 
                             <Link className='link'  to='/flashcards' onClick={() => (props.title(collection.title), props.selected(collection.id))}>{collection.title}</Link>   

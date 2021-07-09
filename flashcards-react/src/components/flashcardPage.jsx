@@ -29,11 +29,11 @@ function FlashcardPage(props) {
         <div>
           <h2 className='title'>{props.title}</h2>
             <div>
-            <Link className='link' to='/'>Home</Link>
+            <Link className='move' to='/'>Home</Link>
             </div>
             <Flashcard flashcards={flashcards}/>
             <div>
-            <Link className='link' to={{pathname: '/form', query:{flashcards:flashcards}  }}>Create</Link>
+            <Link className='move' to={{pathname: '/form', query:{flashcards:flashcards}  }}>Create</Link>
             </div>
         </div>
     );
