@@ -17,7 +17,7 @@
     height: 25vh;
     width:35vw;
     margin: 20px;
-    margin-left: 5%;
+    margin-left: 0;
     border-radius: 15px;
     padding-left:  40px;
     padding-top: 20px;
@@ -42,4 +42,11 @@ form{
     width:30vw;
     padding-left:  30px;
     padding-top: 15px;
+}
+
+.link{
+    color: white;
+    background-color: burlywood;
+    margin-left: 25%;
+    padding: 3px; 
 }
