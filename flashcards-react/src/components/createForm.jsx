@@ -13,7 +13,7 @@ const CreateForm = (props) => {
                 let response = await axios.post(`http://127.0.0.1:8000/collections-flashcard/`, addCard);
                 console.log(response.data)
                 setFlashcard(response.data)
-               
+                window.location = '/';
               }
               catch(err) {
                 console.log(err);
