@@ -34,18 +34,20 @@ function Flashcard(props) {
         }
 
         return(
-            <div>
-                <div>
-                <button onClick={() => goToPreviousCard()}>Previous Card</button>
+            <div className='row row-spacer'>
+                <div className="col-md-4">
+                <button className="cycle" onClick={() => goToPreviousCard()}>Previous Card</button>
                 </div>
-                <div className='card'>
+                <div className=' col-md-4'>
+                    <div className='card'>
                     <h4 className='number'>{cardNumber + 1}/{props.flashcards.length}</h4>
                     <h2>{props.flashcards[cardNumber].word}</h2>
                     <h3>{props.flashcards[cardNumber].definition}</h3>
                     <Link to={{pathname: '/edit', query:{flashcard:props.flashcards[cardNumber]}  }}><button>Edit</button></Link>
+                    </div>
                 </div>
-                <div>
-                    <button onClick={() => goToNextCard()}>Next Card</button>
+                <div className="col-md-4 ml-10">
+                    <button className="cycle" onClick={() => goToNextCard()}>Next Card</button>
                 </div>
             </div>
         );

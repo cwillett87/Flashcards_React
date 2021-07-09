@@ -15,9 +15,9 @@
     color: white;
     background-color: burlywood;
     height: 25vh;
-    width:30vw;
+    width:35vw;
     margin: 20px;
-    margin-left: 35%;
+    margin-left: 5%;
     border-radius: 15px;
     padding-left:  40px;
     padding-top: 20px;
@@ -26,4 +26,9 @@
 
 .number{
     margin-left: 85%;
+}
+
+.cycle{
+    margin-left: 25%;
+    margin-top: 30%;
 }
