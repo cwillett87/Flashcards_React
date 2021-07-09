@@ -1,11 +1,17 @@
 .collection-active {
 background-color: white;
+border-width: 1px;
+    border-style: solid;
+    border-color: burlywood;
 border-radius: .5em;
 padding: 15px;
 }
 
 .collection{
     background-color: burlywood;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
     border-radius: .5em;
     padding: 15px;
 }
@@ -21,6 +27,9 @@ padding: 15px;
 h1{
     color: white;
     background-color: burlywood;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
     height: 6vh;
     width:16vw;
     margin: 20px;
