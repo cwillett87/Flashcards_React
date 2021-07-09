@@ -32,3 +32,14 @@
     margin-left: 25%;
     margin-top: 30%;
 }
+
+form{
+    margin-top: 40px;
+    margin-left: 33%;
+    color: white;
+    background-color: burlywood;
+    height: 10vh;
+    width:30vw;
+    padding-left:  30px;
+    padding-top: 15px;
+}
